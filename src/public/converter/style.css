@@ -18,7 +18,7 @@ body {
 .container-converter-left{
     width: 20%;
     height: 100%;
-    background-color: #333333;
+    background-color: #1e272e;
     position: fixed;
     left: 0;
     top: 0;
@@ -26,9 +26,7 @@ body {
 .container-converter-right{
     width: 80%;
     height: 100%;
-    background-color: blueviolet;
-
-
+    background-color: #f5f5f5;
 }
 
 /*  */
