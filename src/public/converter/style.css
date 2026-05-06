@@ -65,21 +65,80 @@ body {
     background-color: var(--bg-right-site);
     border-radius: 10px;
     font-size: 14px;
-    font-weight: 500;
-    transition: all .1s ease-in-out;
+    font-weight: 600;
+    transition: all .2s ease-in-out;
     cursor: pointer;
+    color: rgb(34, 34, 34);
 }
+
 .button-money-measurment>button:hover {
     transform: scale(1.03);
     background-color: #dbe7f0;
+    color: black;
+    font-size: 13px;
+
 }
 
 /* separator line */
-.separator-line{
+.separator-line {
     width: 100%;
     height: 1.76px;
     margin-top: 15px;
-    background-image: linear-gradient(90deg, var(--bg-left-site) , white , var(--bg-left-site));
+    background-image: linear-gradient(90deg, var(--bg-left-site), rgb(187, 187, 187), var(--bg-left-site));
+}
+
+/* suggestions */
+.container-suggestions {
+    width: 100%;
+    height: 50%;
+
+}
+
+/* title suggestion */
+.title-suggestions {
+    width: 100%;
+    height: 10%;
+    padding: 10px 13px;
+}
+.title-suggestions>p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--bg-right-site);
+}
+
+/* suggestions */
+.suggestion-asidebar{
+    width: 100%;
+    height: 90%;
+    padding-top: 20px;
+}
+
+/* chiled-1 */
+.suggestion-convrsion-1{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.suggestion-convrsion-1>button{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(15, 15, 24);
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+.suggestion-convrsion-1>button>p{
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+}
+.fa-exchange{
+    color: white;
 }
 
 /* container-right-site */
