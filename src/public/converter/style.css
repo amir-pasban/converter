@@ -10,19 +10,19 @@
 body {
     width: 100vw;
     height: 100vh;
-    display: flex;
+    display: grid;
     align-items: center;
-    justify-content: right;
+    grid-template-columns: minmax(17vh , 20%) minmax(50% , 80%);
+    grid-template-rows: repeat(1, 1fr);
 }
 
 /* container asidebar */
 .container-asidebar-site {
-    width: 20%;
     height: 100%;
     background-color: var(--bg-left-site);
-    position: fixed;
     left: 0;
     top: 0;
+    background-color: black;
 }
 
 /* header or top asidebar */
@@ -73,12 +73,12 @@ body {
 
 .button-money-measurment>button:hover {
     transform: scale(1.03);
-    background-color: #dbe7f0;
     color: black;
-    font-size: 13px;
-
+    font-weight: 400;
 }
-
+.button-money-measurment>button:focus{
+    background-color: #494e52;
+}
 /* separator line */
 .separator-line {
     width: 100%;
@@ -97,35 +97,40 @@ body {
 /* title suggestion */
 .title-suggestions {
     width: 100%;
-    height: 10%;
-    padding: 10px 13px;
+    height: 13%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+    padding: 0px 13px;
 }
-.title-suggestions>p{
+
+.title-suggestions>p {
     font-size: 16px;
     font-weight: 400;
     color: var(--bg-right-site);
 }
 
 /* suggestions */
-.suggestion-asidebar{
+.suggestion-asidebar {
     width: 100%;
-    height: 90%;
+    height: 87%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     gap: 15px;
 }
 
-/* chiled-1 */
-.suggestion-convrsion{
+/* chiled-suggestion */
+.suggestion-convrsion {
     width: 100%;
     height: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.suggestion-convrsion>button{
+
+.suggestion-convrsion>button {
     width: 90%;
     height: 100%;
     display: flex;
@@ -134,38 +139,84 @@ body {
     background-color: rgb(15, 15, 24);
     border: 1px solid black;
     border-radius: 5px;
+    flex-shrink: 5;
     cursor: pointer;
 
 }
-.names-money{
+
+/* name-money and icon */
+.names-money {
     width: 45%;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 5px;
-    
+    justify-content: space-evenly;
+    flex-shrink: 3;
+
 }
-.names-money>p{
+
+.names-money>p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 3;
     font-size: 15px;
     font-weight: 400;
     color: white;
 }
 
-.container-icon-exchange{
+.container-icon-exchange {
     width: 10%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.fa-exchange{
+
+.fa-exchange {
     color: white;
 }
 
+
+/* container-prices */
+.container-prices {
+    width: 100%;
+    height: 34.8%;
+    /* background-color: aqua; */
+    padding-top: 15px;
+}
+
+/* title-prices */
+.title-prices {
+    width: 100%;
+    height: 12%;
+    padding-right: 13px;
+}
+
+.title-prices>p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--bg-right-site);
+}
+
+/* prices */
+.prices {
+    width: 100%;
+    height: 88%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.prices-item-1 {}
+
+.prices-item-2 {}
+
+.prices-item-3 {}
+
 /* container-right-site */
 .container-converter-right {
-    width: 80%;
     height: 100%;
     background-color: var(--bg-right-site);
+    background-color: aqua;
 }
