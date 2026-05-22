@@ -10,11 +10,11 @@ a{
 }
 
 /* body */
-body {
+.container {
     height: 100vh;
     display: grid;
     align-items: center;
-    grid-template-columns: minmax(30vh, 20%) minmax(15vh, 80%);
+    grid-template-columns: minmax(30vh, 2fr) minmax(15vh, 8fr);
 }
 
 /* container asidebar */
@@ -249,9 +249,9 @@ body {
     align-items: center;
 }
 
-
+/*-----------------------------------------------------*/
 /* container-right-site */
-.container-converter-right {
+.main-site {
     height: 100%;
     background-color: var(--bg-left-site);
 }
