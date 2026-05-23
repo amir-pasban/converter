@@ -14,8 +14,10 @@ a{
     height: 100vh;
     display: grid;
     align-items: center;
-    grid-template-columns: minmax(30vh, 2fr) minmax(15vh, 8fr);
+    /* grid-template-columns: minmax(30vh, 2fr) minmax(15vh, 8fr); */
+    grid-template-columns: minmax(4vh , 1fr) minmax(30vh , 49fr);
 }
+
 
 /* container asidebar */
 
@@ -23,6 +25,35 @@ a{
     height: 100%;
     background-color: var(--bg-right-site);
 }
+
+/* container icon bar */
+.container-i-bar{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    gap: 15px;
+}
+/* icon bar */
+.fa-bars{
+    font-size: 23px;
+    color: var(--bg-left-site);
+}
+.fa-cog{
+    font-size: 21px;
+    color: var(--bg-left-site);
+
+}
+
+/* asidebar */
+.asidebar{
+    height: 100%;
+    display: none;
+}
+
 
 /* header or top asidebar */
 .header-asidebar {
