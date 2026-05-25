@@ -11,6 +11,7 @@ a{
 
 /* all container */
 .container {
+    background: var(--bg-left-site);
     height: 100vh;
     display: grid;
     align-items: center;
@@ -56,6 +57,7 @@ a{
     width: 250px;
     height: 100%;
     display: none;
+    overflow-y: auto;
     background-color: var(--bg-right-site);
 }
 .menu-asidebar{
@@ -77,9 +79,7 @@ a{
 .menu-asidebar:hover .asidebar{
     display: flex;
     flex-direction: column;
-
 }
-
 
 /* header or top asidebar */
 .header-asidebar {
