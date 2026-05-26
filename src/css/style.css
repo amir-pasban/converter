@@ -1,3 +1,7 @@
+/* به نام خالق جهان */
+/* AMIR HOSSEIN PASBAN */
+
+
 /* start project */
 * {
     padding: 0;
@@ -5,7 +9,12 @@
     box-sizing: border-box;
     font-family: vazir;
 }
-a{
+
+ul {
+    text-decoration: none;
+}
+
+a {
     text-decoration: none;
 }
 
@@ -16,7 +25,7 @@ a{
     display: grid;
     align-items: center;
     /* grid-template-columns: minmax(30vh, 2fr) minmax(15vh, 8fr); */
-    grid-template-columns: minmax( 27px , 1fr) minmax(30vh , 49fr);
+    grid-template-columns: minmax(27px, 1fr) minmax(30vh, 49fr);
 }
 
 
@@ -26,12 +35,12 @@ a{
     min-width: max-content;
     height: 100%;
     background-color: var(--bg-right-site);
-    border-left: 1px solid white ;
+    border-left: 1px solid white;
 
 }
 
 /* container icon bar */
-.container-i-bar{
+.container-i-bar {
     width: 100%;
     height: max-content;
     display: flex;
@@ -41,29 +50,33 @@ a{
     padding: 10px 0;
     gap: 15px;
 }
+
 /* icon bar */
-.fa-bars{
+.fa-bars {
     font-size: 23px;
     color: var(--bg-left-site);
 }
-.fa-cog{
+
+.fa-cog {
     font-size: 21px;
     color: var(--bg-left-site);
 
 }
 
 /* asidebar */
-.asidebar{
+.asidebar {
     width: 250px;
     height: 100%;
     display: none;
     overflow-y: auto;
     background-color: var(--bg-right-site);
 }
-.menu-asidebar{
+
+.menu-asidebar {
     position: relative;
 }
-.menu-asidebar>ul{
+
+.menu-asidebar>ul {
     width: min-content;
     height: 100vh;
     list-style-type: none;
@@ -71,12 +84,13 @@ a{
     right: 23.8px;
     top: -10px;
 }
-.menu-asidebar>ul>li{
+
+.menu-asidebar>ul>li {
     width: 100%;
     height: 100%;
 }
 
-.menu-asidebar:hover .asidebar{
+.menu-asidebar:hover .asidebar {
     display: flex;
     flex-direction: column;
 }
@@ -283,7 +297,7 @@ a{
     display: flex;
     flex-direction: column;
     gap: 15px;
-    padding: 6px 0 ;
+    padding: 6px 0;
     align-items: center;
     justify-content: center;
 }
@@ -294,7 +308,8 @@ a{
     padding: 0 16px;
     color: beige;
 }
-.prices>div>a{
+
+.prices>div>a {
     color: rgb(195, 192, 204);
     width: 100%;
     height: 100%;
@@ -302,6 +317,132 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+
+/* parent setting */
+.parent-setting {
+    position: relative;
+}
+
+.parent-setting>ul {
+    width: min-content;
+    height: 100vh;
+    list-style-type: none;
+    position: absolute;
+    right: 25px;
+    top: -53px;
+}
+
+.parent-setting>ul>li {
+    width: 100%;
+    height: 100%;
+}
+
+.parent-setting:hover .setting {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* setting site */
+.setting {
+    width: 250px;
+    height: 100%;
+    display: none;
+    overflow-y: auto;
+    background-color: var(--bg-right-site);
+}
+
+/* title setting */
+.title-setting {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-setting {
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--bg-left-site);
+    cursor: default;
+}
+
+/* items setting */
+.container-items-setting {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    padding-top: 10px;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* first items setting */
+.item-setting-1 {
+    width: 90%;
+    height: 25px;
+    background-color: rgba(2, 2, 2, .7);
+    padding-right: 15px;
+    border-radius: 5px;
+}
+
+/* menu drup down setting */
+.container-menu-setting {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    cursor: pointer;
+}
+
+.menu-drupdown-setting {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.menu-drupdown-setting>p{
+    color: white;
+}
+.menu-drupdown-setting>p>span{
+    padding-right: 5px;
+}
+
+.icon-left-setting {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+}
+.icon-left-setting>i{
+    color: white;
+    padding-left: 10px;
+}
+
+/* secound item setting */
+.item-setting-2 {
+    width: 90%;
+    height: 25px;
+    background-color: rgba(2, 2, 2, .7);
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    border-radius: 5px;
+}
+
+.item-setting-2>a {
+    width: 100%;
+    height: 100%;
+    color: white;
 }
 
 /*-----------------------------------------------------*/
@@ -313,6 +454,6 @@ a{
 }
 
 /* main site */
-.main-site{
+.main-site {
     height: 100%;
 }
