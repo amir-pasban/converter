@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Converter</title>
+    <title>Tabdiljo | تبدیل جو</title>
+    <link rel="shortcut icon" href="./Assets/photo/InShot_20260529_223342878.png" type="image/x-icon">
     <!-- link font awesome -->
-    <link rel="stylesheet" href="/src/css/all.css">
+    <link rel="stylesheet" href="./src/css/all.css">
     <!-- link constant -->
     <link rel="stylesheet" href="/src/css/constants.css">
     <!-- link of the style.css -->
@@ -191,26 +192,27 @@
                                 </div>
                                 <!-- item setting -->
                                 <div class="container-items-setting">
-                                    <!--  -->
+
                                     <div class="item-setting-1">
-                                        <ul class="container-menu-setting">
-                                            <li class="menu-drupdown-setting">
-                                                <p>زبان<span>(فارسی)</span></p>
-                                            </li>
-                                            <li class="icon-left-setting">
-                                                <i class="fas fa-angle-left"></i>
-                                            </li>
-                                        </ul>
+                                        <div class="topic-button">
+                                            <p>زبان</p>
+                                        </div>
+                                        <div class="choose-language">
+                                            <button type="button">فارسی</button>
+                                            <button type="button">English</button>
+                                        </div>
                                     </div>
+
+
+
                                     <div class="item-setting-1">
-                                        <ul class="container-menu-setting">
-                                            <li class="menu-drupdown-setting">
-                                                <p>تم سایت<span>(روشن)</span></p>
-                                            </li>
-                                            <li class="icon-left-setting">
-                                                <i class="fas fa-angle-left"></i>
-                                            </li>
-                                        </ul>
+                                        <div class="topic-button">
+                                            <p>تم سایت</p>
+                                        </div>
+                                        <div class="choose-language">
+                                            <button type="button">روشن</button>
+                                            <button type="button">تاریک</button>
+                                        </div>
                                     </div>
 
                                     <div class="item-setting-2">
@@ -231,22 +233,86 @@
 
             </ul>
 
-            <!-- asidebar -->
-
-
         </div>
 
         <!-- container-main site -->
         <div class="container-main-site">
+
             <!-- main-site -->
             <div class="main-site">
+                <!-- icon site -->
+                
+                <div class="icon-site">
+                    <p>Tabdil <span>Jo</span></p>
+                    <a href="#"><img src="./Assets/photo/InShot_20260529_223342878.png" alt="photo"></a>
+                </div>
 
                 <!-- title main site -->
+                <!-- ms:main site -->
                 <div class="title-ms-measurement">
                     <h2>اندازه گیری</h2>
                 </div>
 
-                <!-- container  -->
+                <!-- calculation box -->
+                <div class="calculation-box">
+                    <!-- quantity -->
+                    <div class="quantity">
+                        <div class="quantity-child-1">
+                            <p>کمیت</p>
+                        </div>
+                        <div class="quantity-child-2">
+                            <ul class="menu-drop-down-ms">
+                                <li><a href="#">طول (Length)</a><i class="fas fa-angle-left"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- convert to and of -->
+                    <div class="container-convert-to-of">
+                        <!-- convert of -->
+                        <div class="convert-to-of">
+                            <div class="convert-to-of-child-1">
+                                <p>تبدیل از</p>
+                            </div>
+                            <div class="convert-to-of-child-2">
+                                <ul class="menu-drop-down-ms">
+                                    <li><a href="#">متر (m)</a><i class="fas fa-angle-left"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- convert to -->
+                        <div class="convert-to-of">
+                            <div class="convert-to-of-child-1">
+                                <p>تبدیل به</p>
+                            </div>
+                            <div class="convert-to-of-child-2">
+                                <ul class="menu-drop-down-ms">
+                                    <li><a href="#">سانتی متر (cm)</a><i class="fas fa-angle-left"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- convert amount -->
+                    <div class="convert-amount">
+                        <div class="amount-child-1">
+                            <p>مقدار</p>
+                        </div>
+                        <div class="amount-child-2">
+                            <input type="text" placeholder="مثال: 26">
+                        </div>
+                    </div>
+
+                    <!-- button convert -->
+                    <div class="button-convert">
+                        <button type="submit">
+                            تبدیل
+                        </button>
+                    </div>
+
+
+
+                </div>
 
             </div>
 
