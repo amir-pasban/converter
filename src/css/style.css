@@ -3,10 +3,12 @@
 
 
 /* start project */
-* {
+*,*::after,*::before{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+body{
     font-family: vazir;
 }
 
@@ -19,27 +21,22 @@ a {
 }
 
 :root {
-    --bg-right-site: #010B13;
-    --bg-left-site: #F7F6F2;
+    --bg-right-site: #00adb5;
+    --bg-left-site: #222831;
+    --bg-child-rite-site: #393e46;
     --button-site: #1b1b1b;
     --font-color-right: white;
-    --font-color-left: #FDFDFC;
+    --font-color-left: #eeeeee;
     --box-calcualation: #010B13;
     --button-calcualation: #010b13d7;
     --section2-button-calcualation: #222f3d;
 }
 
-/* body */
-body {
-    /* width: 100vw; */
-    height: 100vh;
-    /* background-color: var(--bg-left-site); */
-}
-
 /* all container */
 .container {
     background: var(--bg-left-site);
-    height: 100%;
+    width: 100%;
+    height: 100vh;
     display: grid;
     align-items: center;
     /* grid-template-columns: minmax(30vh, 2fr) minmax(15vh, 8fr); */
@@ -57,9 +54,10 @@ body {
     height: 100%;
     right: 0;
     top: 0;
-    background-color: var(--bg-right-site);
+    background-color: var(--bg-left-site);
     /* border-left: 2px solid var(--bg-left-site); */
     z-index: 7;
+    border: 1px solid black;
 
 }
 
@@ -77,13 +75,13 @@ body {
 
 /* icon bar */
 .fa-bars {
-    font-size: 24px;
-    color: var(--bg-left-site);
+    font-size: 25px;
+    color: var(--bg-right-site);
 }
 
 .fa-cog {
     font-size: 24px;
-    color: var(--bg-left-site);
+    color: var(--bg-right-site);
 
 }
 
@@ -93,7 +91,7 @@ body {
     height: 100%;
     display: none;
     overflow-y: auto;
-    background-color: var(--bg-right-site);
+    background-color: var(--bg-child-rite-site);
 }
 
 .menu-asidebar {
@@ -479,33 +477,34 @@ body {
 
 /*-----------------------------------------------------*/
 
-/* container-right-site */
+/* container-left-site */
 .container-main-site {
+    width: 100%;
     height: 100%;
     background-color: var(--bg-left-site);
-    z-index: 6;
 }
 
 /* main site */
 .main-site {
-    height: 100%;
+    height: 98%;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
+    background-color: var(--bg-left-site);
 }
 
 /* icon site */
 .icon-site {
-    width: 99.6%;
+    width: 100%;
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
-    border: none;
-    border-radius: 0 0 20px 20px;
+    /* border-radius: 0 0 50px 50px; */
+
     background-color: var(--bg-right-site);
 }
 
@@ -675,7 +674,8 @@ body {
     border-radius: 13px 0 0 13px;
     background-color: var(--box-calcualation);
 }
-.amount-child-1>p{
+
+.amount-child-1>p {
     color: var(--font-color-left);
 }
 
@@ -696,7 +696,8 @@ body {
     color: var(--font-color-left);
     background-color: rgba(255, 255, 255, 0);
 }
-.amount-child-2>input::placeholder{
+
+.amount-child-2>input::placeholder {
     color: var(--font-color-left);
     font-size: 14px;
 
@@ -711,11 +712,12 @@ body {
 }
 
 /* menu drop down in main site */
-.menu-drop-down-ms{
+.menu-drop-down-ms {
     width: 100%;
     height: 100%;
 }
-.menu-drop-down-ms>li{
+
+.menu-drop-down-ms>li {
     width: 100%;
     height: 100%;
     padding: 0 10px 0 7px;
@@ -723,14 +725,17 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-.menu-drop-down-ms>li>a{
+
+.menu-drop-down-ms>li>a {
     color: var(--font-color-left);
 }
-.menu-drop-down-ms>li>i{
+
+.menu-drop-down-ms>li>i {
     font-size: 19px;
     font-weight: 600;
     color: var(--bg-right-site);
 }
+
 /* button convert */
 .button-convert {
     width: 200px;
@@ -747,7 +752,7 @@ body {
 }
 
 /* statment about my site */
-.statment-site{
+.statment-site {
     margin-top: 50px;
     width: 90%;
     height: max-content;
@@ -758,20 +763,23 @@ body {
     gap: 20px;
     padding-bottom: 100px;
 }
-.child-statment-site{
+
+.child-statment-site {
     width: 100%;
     height: max-content;
 }
-.child-statment-site>p{
-    color: var(--bg-right-site);
+
+.child-statment-site>p {
+    color: var(--font-color-left);
     font-size: 1rem;
     display: flex;
     align-items: start;
     justify-content: center;
     flex-direction: column;
 }
-.child-statment-site>p>span{
-    color: black;
+
+.child-statment-site>p>span {
+    color: var(--bg-right-site);
     font-size: 1.4rem;
     font-size: 700;
 }
