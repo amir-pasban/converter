@@ -42,46 +42,54 @@ a {
     /* grid-template-columns: minmax(30vh, 2fr) minmax(15vh, 8fr); */
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    padding-right: 40px;
 }
 
 
 /* container asidebar */
 
 .container-asidebar-site {
-    position: fixed;
-    min-width: 40px;
-    height: 100%;
+    display: flex;
+    width: 100%;
+    height: 55px;
+    position: absolute;
     right: 0;
-    top: 0;
-    background-color: var(--bg-left-site);
+    top: 54px;
+    background-color: var(--bg-right-site);
+    clip-path: polygon(0 19%,5% 19%,8% 0,92% 0,95% 19%,100% 19%,100% 100%,0 100%);
     /* border-left: 2px solid var(--bg-left-site); */
     z-index: 7;
-    border: 1px solid black;
-
+    border: none;
 }
 
 /* container icon bar */
 .container-i-bar {
     width: 100%;
-    height: max-content;
+    height: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px 0;
     gap: 15px;
 }
 
+/* search bar */
+.container-search{
+    width: 70px;
+    height: 20px;
+    background-color: ;
+}
+.fa-search{}
+.container-search>input{
+    
+}
 /* icon bar */
 .fa-bars {
     font-size: 25px;
-    color: var(--bg-right-site);
+    color: var(--bg-left-site);
 }
 
 .fa-cog {
     font-size: 24px;
-    color: var(--bg-right-site);
+    color: var(--bg-left-site);
 
 }
 
@@ -484,27 +492,27 @@ a {
     background-color: var(--bg-left-site);
 }
 
-/* main site */
-.main-site {
-    height: 98%;
+/* header-site */
+header{
     width: 100%;
+    height: 110px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    background-color: var(--bg-left-site);
+    align-items: start;
+    justify-content: center;
+    position: relative;
+    /* background-color: #002147; */
 }
-
 /* icon site */
 .icon-site {
     width: 100%;
-    height: 60px;
+    height: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 10px;
     gap: 5px;
-    /* border-radius: 0 0 50px 50px; */
-
+    border: 1px solid black;
+    clip-path: polygon(0 0,100% 0,100% 100%,95% 100%,92% 80%,8% 80%,5% 100%,0 100%);
     background-color: var(--bg-right-site);
 }
 
@@ -533,6 +541,17 @@ a {
 .icon-site>a>img {
     height: 100%;
     width: 100%;
+}
+
+/* main site */
+.main-site {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    background-color: var(--bg-left-site);
 }
 
 /* title main site */
@@ -754,7 +773,7 @@ a {
 /* statment about my site */
 .statment-site {
     margin-top: 50px;
-    width: 90%;
+    width: 77%;
     height: max-content;
     display: flex;
     flex-direction: column;
