@@ -3,12 +3,15 @@
 
 
 /* start project */
-*,*::after,*::before{
+*,
+*::after,
+*::before {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: vazir;
 }
 
@@ -30,6 +33,7 @@ a {
     --box-calcualation: #010B13;
     --button-calcualation: #010b13d7;
     --section2-button-calcualation: #222f3d;
+    --color-icon-nav: #f5f5f5;
 }
 
 /* all container */
@@ -42,55 +46,6 @@ a {
     /* grid-template-columns: minmax(30vh, 2fr) minmax(15vh, 8fr); */
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-}
-
-
-/* container asidebar */
-
-.container-asidebar-site {
-    display: flex;
-    width: 100%;
-    height: 55px;
-    position: absolute;
-    right: 0;
-    top: 54px;
-    background-color: var(--bg-right-site);
-    clip-path: polygon(0 19%,5% 19%,8% 0,92% 0,95% 19%,100% 19%,100% 100%,0 100%);
-    /* border-left: 2px solid var(--bg-left-site); */
-    z-index: 7;
-    border: none;
-}
-
-/* container icon bar */
-.container-i-bar {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-}
-
-/* search bar */
-.container-search{
-    width: 70px;
-    height: 20px;
-    background-color: ;
-}
-.fa-search{}
-.container-search>input{
-    
-}
-/* icon bar */
-.fa-bars {
-    font-size: 25px;
-    color: var(--bg-left-site);
-}
-
-.fa-cog {
-    font-size: 24px;
-    color: var(--bg-left-site);
-
 }
 
 /* asidebar */
@@ -493,15 +448,110 @@ a {
 }
 
 /* header-site */
-header{
+header {
     width: 100%;
-    height: 110px;
+    height: 101px;
     display: flex;
     align-items: start;
     justify-content: center;
     position: relative;
-    /* background-color: #002147; */
+    background-color: var(--bg-right-site);
+    box-shadow: 0 1px 5px var(--font-color-left);
 }
+nav{
+    width: 100%;
+    height: 100%;
+}
+
+/* container asidebar */
+
+.container-asidebar-site {
+    display: flex;
+    width: 100%;
+    height: 55px;
+    position: absolute;
+    right: 0;
+    top: 46px;
+    background-color: var(--box-calcualation);
+    /* border-bottom: 1px solid var(--font-color-left); */
+    box-shadow: 0 4px 10px white;
+    clip-path: polygon(0 20%, 5% 20%, 8% 0, 92% 0, 95% 20%, 100% 20%, 100% 100%, 0 100%);
+    /* border-left: 2px solid var(--bg-left-site); */
+    z-index: 7;
+}
+
+/* container icon bar */
+.container-i-bar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+/* search bar */
+.container-search {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding-right: 35px;
+    justify-content: right;
+    transition: all .5s ease-in-out;
+}
+
+.container-search:hover {
+    width: 180px;
+    height: 32px;
+    border-radius: 6px;
+    border: 1px solid var(--bg-right-site);
+}
+
+.container-icon-search {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-search {
+    color: var(--color-icon-nav);
+    font-size: 22px;
+}
+
+#search{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: transparent;
+}
+#search::placeholder{
+    color: var(--color-icon-nav);
+}
+
+/* icon bar */
+.fa-bars {
+    font-size: 23px;
+    color: var(--color-icon-nav);
+}
+
+.fa-cog {
+    font-size: 23px;
+    color: var(--color-icon-nav);
+}
+
+
 /* icon site */
 .icon-site {
     width: 100%;
@@ -509,30 +559,15 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 10px;
     gap: 5px;
-    border: 1px solid black;
-    clip-path: polygon(0 0,100% 0,100% 100%,95% 100%,92% 80%,8% 80%,5% 100%,0 100%);
-    background-color: var(--bg-right-site);
-}
-
-.icon-site>p {
-    font-size: 1.3rem;
-    font-width: 300;
-    color: var(--font-color-left);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.icon-site>p>span {
-    font-size: 1.6rem;
-    font-weight: 900;
-    color: #002147;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-bottom: 12px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 95% 100%, 92% 80%, 8% 80%, 5% 100%, 0 100%);
+    background-color: var(--box-calcualation);
 }
 
 .icon-site>a {
-    width: 40px;
-    height: 40px;
+    width: 150px;
+    height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
