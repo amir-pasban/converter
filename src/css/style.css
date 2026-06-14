@@ -54,7 +54,7 @@
 
 .menu-asidebar:hover .asidebar {
     visibility: visible;
-    transform: translateX(-136vw);
+    transform: translateX(-125vw);
     transition: all 1s ease-in-out;
 }
 
@@ -307,7 +307,7 @@
 
 .parent-setting:hover .setting {
     visibility: visible;
-    transform: translateX(-96vw);
+    transform: translateX(-89vw);
     transition: all 1s ease-in;
 }
 
