@@ -16,14 +16,12 @@
 .container {
     background: var(--bg-left-site);
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: grid;
     align-items: center;
     /* grid-template-columns: minmax(30vh, 2fr) minmax(15vh, 8fr); */
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    overflow-x: hidden;
-    overflow-y: auto;
 
 }
 
