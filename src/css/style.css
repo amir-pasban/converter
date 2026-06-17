@@ -31,26 +31,37 @@
     background-color: var(--bg-child-rite-site);
     visibility: hidden;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     opacity: 0;
+    border-radius: 10px 0 10px 0;
+    border: 1px solid #33373d;
+    box-shadow: 3px 3px 10px rgb(15, 15, 15);
+    padding: 4px;
 }
-.asidebar::before{
+
+.asidebar::before {
     content: "";
     position: absolute;
-    right: 2px;
-    top: 2px;
-    width: 40px;
-    height: 40px;
+    right: -3px;
+    top: -3px;
+    width: 35px;
+    height: 35px;
     background-color: var(--bg-right-site);
-    clip-path: polygon(0 0,33px 0,40px 7px,40px 40px,35px 40px,35px 7px,30px 5px,0 5px);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 100%, 90% 10%, 0 10%);
 }
-.asidebar::after{
+
+.asidebar::after {
     content: "";
     position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 50px;
-    height: 50px;
+    left: -3px;
+    bottom: -3px;
+    width: 35px;
+    height: 35px;
     background-color: var(--bg-right-site);
+    clip-path: polygon(0 0, 10% 0, 10% 90%, 100% 90%, 100% 100%, 0 100%);
 }
 
 .menu-asidebar {
@@ -59,7 +70,7 @@
 
 .menu-asidebar>ul {
     width: 250px;
-    height: 560px;
+    height: 580px;
     list-style-type: none;
     position: absolute;
     display: flex;
@@ -83,7 +94,7 @@
 /* header or top asidebar */
 .header-asidebar {
     width: 100%;
-    height: 100px;
+    height: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -342,7 +353,32 @@
     visibility: hidden;
     opacity: 0;
     background-color: var(--bg-child-rite-site);
-    /* clip-path: polygon(6% 0,94% 0,100% 6%,100% 94%,94% 100%,6% 100%,0 94%,0 6%); */
+    border-radius: 10px 0 10px 0;
+    border: 1px solid #33373d;
+    box-shadow: 3px 3px 10px rgb(15, 15, 15);
+    padding: 4px;
+}
+
+.setting::before {
+    content: "";
+    position: absolute;
+    right: -3px;
+    top: -3px;
+    width: 35px;
+    height: 35px;
+    background-color: var(--bg-right-site);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 90% 100%, 90% 10%, 0 10%);
+}
+
+.setting::after {
+    content: "";
+    position: absolute;
+    left: -3px;
+    bottom: -3px;
+    width: 35px;
+    height: 35px;
+    background-color: var(--bg-right-site);
+    clip-path: polygon(0 0, 10% 0, 10% 90%, 100% 90%, 100% 100%, 0 100%);
 }
 
 /* title setting */
@@ -682,6 +718,7 @@ nav {
     align-items: center;
     justify-content: center;
 }
+
 /* item quantity */
 
 
