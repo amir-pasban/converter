@@ -17,7 +17,7 @@ a {
 :root {
     --bg-right-site: #00adb5;
     --bg-left-site: #222831;
-    --bg-child-rite-site: #393e46;
+    --bg-child-rite-site: rgb(57, 62, 70);
     --button-site: #1b1b1b;
     --font-color-right: white;
     --font-color-left: #eeeeee;
