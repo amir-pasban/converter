@@ -43,8 +43,8 @@
 .asidebar::before {
     content: "";
     position: absolute;
-    right: -3px;
-    top: -3px;
+    right: -1px;
+    top: -1px;
     width: 35px;
     height: 35px;
     background-color: var(--bg-right-site);
@@ -75,7 +75,7 @@
     list-style-type: none;
     position: absolute;
     display: flex;
-    left: 30%;
+    right: 0;
     top: -629px;
     z-index: 999;
 }
@@ -89,7 +89,7 @@
     width: 250px;
     height: 580px;
     visibility: visible;
-    transform: translateY(670px);
+    transform: translate(-.1px , 574px);
     transition: all 1s ease-in-out;
     opacity: 1;
 }
@@ -339,7 +339,7 @@
 .parent-setting>ul {
     list-style-type: none;
     position: absolute;
-    left: 30%;
+    right: 0;
     top: -629px;
     z-index: 999;
 
@@ -355,7 +355,7 @@
     height: 580px;
     visibility: visible;
     opacity: 1;
-    transform: translateY(670px);
+    transform: translate(-.1px , 574px);
     transition: all 1s ease-in-out;
 }
 
@@ -376,8 +376,8 @@
 .setting::before {
     content: "";
     position: absolute;
-    right: -3px;
-    top: -3px;
+    right: -1px;
+    top: -1px;
     width: 35px;
     height: 35px;
     background-color: var(--bg-right-site);
