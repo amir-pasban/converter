@@ -15,19 +15,17 @@
 /* all container */
 .container {
     background: var(--bg-left-site);
-    width: 100%;
+    width: 100vw;
     height: 100%;
-    display: grid;
-    align-items: center;
-    /* grid-template-columns: minmax(30vh, 2fr) minmax(15vh, 8fr); */
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    flex-direction: column;
+
 }
 
 /* asidebar */
 .asidebar {
-    width: 100%;
-    height: 100%;
+    width: 0px;
+    height: 0px;
     background-color: var(--bg-child-rite-site);
     visibility: hidden;
     position: relative;
@@ -65,26 +63,31 @@
 }
 
 .menu-asidebar {
-    position: relative;
+    min-width: 17px;
+    min-height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu-asidebar>ul {
-    width: 250px;
-    height: 580px;
+
     list-style-type: none;
     position: absolute;
     display: flex;
-    left: -186px;
+    left: 30%;
     top: -629px;
     z-index: 999;
 }
 
-.menu-asidebar>ul>li {
+/* .menu-asidebar>ul>li {
     width: 100%;
     height: 100%;
-}
+} */
 
 .menu-asidebar:hover .asidebar {
+    width: 250px;
+    height: 580px;
     visibility: visible;
     transform: translateY(670px);
     transition: all 1s ease-in-out;
@@ -203,7 +206,6 @@
     justify-content: center;
     flex-direction: column;
     gap: 15px;
-
 }
 
 /* chiled-suggestion */
@@ -319,26 +321,38 @@
 
 /* parent setting */
 .parent-setting {
-    position: relative;
+    min-width: 17px;
+    min-height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parent-setting>a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .parent-setting>ul {
-    width: 250px;
-    height: 560px;
     list-style-type: none;
     position: absolute;
-    left: -43px;
+    left: 30%;
     top: -629px;
     z-index: 999;
 
 }
 
-.parent-setting>ul>li {
+/* .parent-setting>ul>li {
     width: 100%;
     height: 100%;
-}
+} */
 
 .parent-setting:hover .setting {
+    width: 250px;
+    height: 580px;
     visibility: visible;
     opacity: 1;
     transform: translateY(670px);
@@ -348,8 +362,8 @@
 
 /* setting site */
 .setting {
-    width: 100%;
-    height: 100%;
+    width: 0px;
+    height: 0px;
     visibility: hidden;
     opacity: 0;
     background-color: var(--bg-child-rite-site);
@@ -499,18 +513,10 @@
 
 /*-----------------------------------------------------*/
 
-/* container-left-site */
-.container-main-site {
-    width: 100%;
-    height: 100%;
-    background-color: var(--bg-left-site);
-}
-
 /* header-site */
 header {
     width: 100%;
     height: 110px;
-    background-color: var(--box-calcualation);
 }
 
 nav {
@@ -523,32 +529,25 @@ nav {
     background-color: var(--box-calcualation);
 }
 
-/* container asidebar */
-
-.container-asidebar-site {
-    display: flex;
-    width: 100%;
-    height: 55px;
-    background-color: var(--box-calcualation);
-    box-shadow: 0 2px 10px white;
-    /* clip-path: polygon(0 20%, 5% 20%, 8% 0, 92% 0, 95% 20%, 100% 20%, 100% 100%, 0 100%); */
-}
 
 /* container icon bar */
 .container-i-bar {
     width: 100%;
-    height: 100%;
+    height: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 28px;
+    position: relative;
+    gap: 40px;
+    /* box-shadow: 0 2px 10px white; */
+    background-color: var(--box-calcualation);
 }
 
 /* search bar */
 .container-search {
     width: 40px;
-    height: 40px;
-    border-radius: 100%;
+    height: 32px;
+    border-radius: 5px;
     background-color: transparent;
     position: relative;
     overflow: hidden;
@@ -569,7 +568,7 @@ nav {
 .container-icon-search {
     position: absolute;
     right: 0;
-    top: 0;
+    bottom: -1px;
     width: 40px;
     height: 33px;
     display: flex;
@@ -723,9 +722,11 @@ nav {
     align-items: center;
     justify-content: center;
 }
-.menu-drop-down-ms>li:hover .items-quantity{
+
+.menu-drop-down-ms>li:hover .items-quantity {
     display: flex;
 }
+
 /* item quantity */
 .items-quantity {
     position: absolute;
@@ -914,22 +915,22 @@ nav {
 /* statment about my site */
 .statment-site {
     margin-top: 50px;
-    width: 77%;
-    height: max-content;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    padding-bottom: 100px;
+    background-color: var(--bg-left-site);
+    /* gap: 20px; */
+    /* padding-bottom: 100px; */
 }
 
 .child-statment-site {
-    width: 100%;
-    height: max-content;
+    width: 77%;
 }
 
 .child-statment-site>p {
+
     color: var(--font-color-left);
     font-size: 1rem;
     display: flex;
@@ -941,5 +942,5 @@ nav {
 .child-statment-site>p>span {
     color: var(--bg-right-site);
     font-size: 1.4rem;
-    font-size: 700;
+    font-size: 24px;
 }
