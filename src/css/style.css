@@ -737,18 +737,19 @@ nav {
     left: 0;
     top: 50px;
     width: 250px;
-    height: 350px;
+    height: max-content;
     border: none;
     border-radius: 4px;
     background-color: rgba(1, 11, 19,.9);
     backdrop-filter: blur(2px);
     z-index: 1000;
+    padding: 20px;
     gap: 10px;
 }
 
 .items-quantity>li {
-    width: 85%;
-    height: 30px;
+    width: 90%;
+    min-width: 35px;
     background-color: var(--box-calcualation);
     border: 1px solid rgb(24, 24, 24);
     border-radius: 4px;
