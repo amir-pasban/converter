@@ -132,31 +132,6 @@ TABDIL JO
     ├── fonts
     └── webfonts
 ```
-
----
-
-# 🚀 Getting Started
-
-## Clone Repository
-
-```bash
-git clone https://github.com/amir-pasban/converter.git
-```
-
-## Enter Project Directory
-
-```bash
-cd converter
-```
-
-## Run The Project
-
-Open the following file in your browser:
-
-```text
-index.html
-```
-
 ---
 
 # 🎯 Project Goals
@@ -224,33 +199,6 @@ git push origin feature/AmazingFeature
 ```
 
 5. Open a Pull Request
-
----
-
-# 👨‍💻 Developer
-
-### Amir Pasban
-
-GitHub:
-https://github.com/amir-pasban
-
-Email:
-AmirPasban.dev@gmail.com
-
----
-
-# 📈 Project Information
-
-| Information | Details |
-|------------|---------|
-| Project Name | TABDIL JO |
-| Project Type | Unit & Currency Converter |
-| Status | Active Development |
-| Development Time | 1.5 Months |
-| First Software Project | Yes |
-| Open Source | Yes |
-| License | MIT |
-| Purpose | Real-World Usage |
 
 ---
 
