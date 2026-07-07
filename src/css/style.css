@@ -739,8 +739,10 @@ nav {
     transform: translate(-50%,0%);
     top: 18px;
     width: 250px;
-    height: 347px;
+    height: 400px;
     overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: var(--bg-right-site) rgba(1, 11, 19,.9);
     border: none;
     border-radius: 8px;
     background-color: rgba(1, 11, 19,.9);
@@ -865,6 +867,13 @@ nav {
     background-color: rgba(255, 255, 255, 0);
     font-family: vazir;
 }
+/* برای از بین بردن چیز های اضافه در input */
+.amount-child-2>input[type=number]::-webkit-outer-spin-button, 
+.amount-child-2>input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; 
+}
+
 
 .amount-child-2>input::placeholder {
     color: rgba(255, 255, 255, 0.63);
