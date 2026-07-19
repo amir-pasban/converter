@@ -25,7 +25,7 @@
 /* asidebar */
 .asidebar {
     width: 0px;
-    height: 0px;
+    height: 100px;
     background-color: var(--bg-child-rite-site);
     visibility: hidden;
     position: relative;
@@ -149,6 +149,11 @@
     color: var(--font-color-right);
 }
 
+.button-money-measurment>button:nth-of-type(1){
+    background-color: #494e52;
+    color: var(--bg-right-site);
+}
+
 .button-money-measurment>button:hover {
     transform: scale(1.03);
     color: var(--bg-right-site);
@@ -157,7 +162,7 @@
 
 .button-money-measurment>button:focus {
     background-color: #494e52;
-    color: var(--bg-left-site);
+    color: var(--bg-right-site);
 }
 
 /* separator line */
@@ -646,8 +651,8 @@ nav {
 }
 
 /* main site */
-.main-site {
-    height: 100%;
+main {
+    min-width: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -684,9 +689,12 @@ nav {
     /* background-color: brown; */
     padding-top: 25px;
 }
+.calculation-box-2{
+    display: none;
+}
 
 /* quantity */
-.quantity {
+.quantity , .calculation-child{
     width: 250px;
     height: 45px;
     border-radius: 4px;
@@ -699,7 +707,7 @@ nav {
 
 }
 
-.quantity-child-1 {
+.quantity-child-1 , .calculation-child-right {
     width: 35%;
     height: 100%;
     display: flex;
@@ -710,13 +718,13 @@ nav {
     background-color: var(--box-calcualation);
 }
 
-.quantity-child-1>p {
+.calculation-child-right>p {
     font-size: .9rem;
     font-weight: 500;
     color: var(--font-color-left);
 }
 
-.quantity-child-2 {
+.quantity-child-2 , .calculation-child-left {
     width: 65%;
     height: 100%;
     display: flex;
@@ -821,7 +829,7 @@ nav {
 
 
 /* convert amount */
-.convert-amount {
+.convert-amount , .calculation-child {
     width: 250px;
     height: 45px;
     border-radius: 4px;
@@ -834,7 +842,7 @@ nav {
     box-shadow: .3px .3px 20px rgb(35, 35, 36);
 }
 
-.amount-child-1 {
+.amount-child-1 , .calculation-child-right{
     width: 35%;
     height: 100%;
     display: flex;
@@ -845,11 +853,11 @@ nav {
     background-color: var(--box-calcualation);
 }
 
-.amount-child-1>p {
+.calculation-child-right>p {
     color: var(--font-color-left);
 }
 
-.amount-child-2 {
+.amount-child-2 , .calculation-child-left {
     width: 65%;
     height: 100%;
     display: flex;
@@ -857,7 +865,7 @@ nav {
     justify-content: center;
 }
 
-.amount-child-2>input {
+.calculation-child-left>input {
     width: 95%;
     height: 90%;
     border-radius: 4px;
@@ -868,21 +876,21 @@ nav {
     font-family: vazir;
 }
 /* برای از بین بردن چیز های اضافه در input */
-.amount-child-2>input[type=number]::-webkit-outer-spin-button, 
-.amount-child-2>input[type=number]::-webkit-inner-spin-button {
+.calculation-child-left>input[type=number]::-webkit-outer-spin-button, 
+.calculation-child-left>input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0; 
 }
 
 
-.amount-child-2>input::placeholder {
+.calculation-child-left>input::placeholder {
     color: rgba(255, 255, 255, 0.63);
     font-size: 14px;
 
 }
 
 
-.amount-child-2>input:focus {
+.calculation-child-left>input:focus {
     border: none;
     outline: none;
     font-size: 16px;
@@ -916,7 +924,7 @@ nav {
 }
 
 /* button convert */
-.button-convert {
+.button-convert{
     width: 200px;
     height: 45px;
 }

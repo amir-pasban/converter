@@ -57,6 +57,7 @@
                                         </div>
                                         <!-- choose money or measurment -->
                                         <div class="button-money-measurment">
+
                                             <button type="button">اندازه گیری</button>
                                             <button type="button">پول</button>
                                         </div>
@@ -253,7 +254,7 @@
         </header>
 
         <!-- main-site -->
-        <div class="main-site">
+        <main>
 
             <!-- title main site -->
             <!-- ms:main site -->
@@ -262,13 +263,13 @@
             </div>
 
             <!-- calculation box -->
-            <div class="calculation-box">
+            <div class="calculation-box calculation-box-1">
                 <!-- quantity -->
-                <div class="quantity">
-                    <div class="quantity-child-1">
+                <div class="quantity calculation-child">
+                    <div class="quantity-child-1 calculation-child-right">
                         <p>کمیت</p>
                     </div>
-                    <div class="quantity-child-2">
+                    <div class="quantity-child-2 calculation-child-left">
                         <ul class="menu-drop-down-ms">
                             <li><a href="#">طول (Length)</a><i class="fas fa-angle-left"></i>
                                 <!-- item quantity -->
@@ -284,7 +285,7 @@
                 <!-- convert to and of -->
                 <div class="container-convert-to-of">
                     <!-- convert of -->
-                    <div class="convert-to-of">
+                    <div class="convert-to-of calculation-child">
                         <div class="convert-to-of-child-1">
                             <p>تبدیل از</p>
                         </div>
@@ -300,11 +301,11 @@
                         </div>
                     </div>
                     <!-- convert to -->
-                    <div class="convert-to-of">
-                        <div class="convert-to-of-child-1">
+                    <div class="convert-to-of calculation-child">
+                        <div class="convert-to-of-child-1 calculation-child-right">
                             <p>تبدیل به</p>
                         </div>
-                        <div class="convert-to-of-child-2">
+                        <div class="convert-to-of-child-2 calculation-child-left">
                             <ul class="menu-drop-down-ms">
                                 <li><a href="#">سانتی متر (cm)</a><i class="fas fa-angle-left"></i>
                                     <ul class="items-quan-convert-to-of">
@@ -317,11 +318,11 @@
 
                 </div>
                 <!-- convert amount -->
-                <div class="convert-amount">
-                    <div class="amount-child-1">
+                <div class="convert-amount calculation-child">
+                    <div class="amount-child-1 calculation-child-right">
                         <p>مقدار</p>
                     </div>
-                    <div class="amount-child-2">
+                    <div class="amount-child-2 calculation-child-left">
                         <input type="number" inputmode="numeric" placeholder="مثال: 26">
                     </div>
                 </div>
@@ -333,7 +334,55 @@
                     </button>
                 </div>
             </div>
+            <!-- for maney -->
+            <div class="calculation-box calculation-box-2">
+                <div class="calculation-child">
+                    <div class="calculation-child-right">
+                        <p>تبدیل از</p>
+                    </div>
+                    <div class="calculation-child-left">
+                        <ul class="menu-drop-down-ms">
+                            <li><a href="#">یورو (EUR)</a><i class="fas fa-angle-left"></i>
+                                <!-- item quantity -->
+                                <ul class="items-quan-convert-to-of">
+                                    
+                                </ul>
+                            </li>
 
+                        </ul>
+                    </div>
+                </div>
+                <div class="calculation-child">
+                    <div class="calculation-child-right">
+                        <p>تبدیل به</p>
+                    </div>
+                    <div class="calculation-child-left">
+                        <ul class="menu-drop-down-ms">
+                            <li><a href="#">دلار (USD)</a><i class="fas fa-angle-left"></i>
+                                <!-- item quantity -->
+                                <ul class="items-quan-convert-to-of">
+                                    
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="calculation-child">
+                    <div class="calculation-child-right">
+                        <p>مقدار</p>
+                    </div>
+                    <div class="calculation-child-left">
+                        <input type="number" inputmode="numeric" placeholder="مثال: 26">
+                    </div>
+                </div>
+                <div class="button-convert">
+                    <button type="submit">
+                        تبدیل
+                    </button>
+                </div>
+
+            </div>
 
             <!-- statment about my site -->
             <div class="statment-site">
@@ -386,7 +435,7 @@
 
 
 
-        </div>
+        </main>
     </div>
 
 
