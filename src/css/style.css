@@ -25,7 +25,7 @@
 /* asidebar */
 .asidebar {
     width: 0px;
-    height: 100px;
+    height: 0px;
     background-color: var(--bg-child-rite-site);
     visibility: hidden;
     position: relative;
@@ -87,7 +87,7 @@
 
 .menu-asidebar:hover .asidebar {
     width: 250px;
-    height: 580px;
+    height: 100dvh;
     visibility: visible;
     transform: translate(-.1px , 574px);
     transition: all 1s ease-in-out;
